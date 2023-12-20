@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Practice Excerices</title>
+    <style>
+        table,
+        tr,
+        td,
+        th {
+            border-collapse: collapse;
+            padding: 7px;
+        }
+
+        th {
+            background-color: #427fef;
+            color: white;
+            padding: 7px;
+            font-size: small;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #eef7ff;
+
+        }
+
+        tbody tr {
+            border-bottom: 0.5px solid #c4dcf3;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>OrderID</th>
+                <th>OrderAmount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>USA</td>
+                <td>1000</td>
+                <td>$1,300</td>
+            </tr>
+            <tr>
+                <td>USA</td>
+                <td>1001</td>
+                <td>$700</td>
+            </tr>
+            <tr>
+                <td>CA</td>
+                <td>1002</td>
+                <td>$2,000</td>
+            </tr>
+            <tr>
+                <td>CA</td>
+                <td>1003</td>
+                <td>$1,000</td>
+            </tr>
+        <tfoot>
+            <tr style="text-align: left;">
+                <th colspan="2">Total</th>
+                <th>5,000</th>
+            </tr>
+        </tfoot>
+        </tbody>
+    </table>
+</body>
+
+</html>

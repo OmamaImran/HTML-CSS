@@ -1,0 +1,37 @@
+article :first-child {
+    color: green;
+}
+
+article p:last-of-type {
+    color: blue
+}
+
+ul li:nth-child(odd) {
+    color: deeppink;
+}
+
+a:link,
+a:visited {
+    color: blueviolet;
+}
+
+a:hover,
+a:focus {
+    font-size: large;
+}
+
+article::first-letter {
+    font-size: 140%;
+}
+
+article::selection {
+    background-color: red;
+}
+
+::selection {
+    background-color: yellow;
+}
+
+article::before {
+    content: "...";
+}

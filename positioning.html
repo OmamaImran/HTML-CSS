@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Positioning</title>
+    <style>
+        .boxes {
+            border: 5px solid gray;
+        }
+
+        .box {
+            height: 5rem;
+            width: 5rem;
+        }
+
+        .box-one {
+            background-color: gold;
+        }
+
+        .box-two {
+            background-color: tomato;
+            position: relative;
+            left: 4rem;
+            top: 2rem;
+            z-index: -1;
+        }
+
+        .box-three {
+            background-color: dodgerblue;
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box box-one"></div>
+        <div class="box box-two"></div>
+        <div class="box box-three"></div>
+    </div>
+</body>
+
+</html>
