@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Media</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box {
+            background-color: gold;
+        }
+
+        .box:nth-child(2) {
+            background-color: aqua;
+        }
+
+        @media screen and (min-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti ipsum iure facilis sapiente in quos
+                voluptatem inventore, nulla vero voluptatum placeat et nihil quasi quidem aliquam consectetur
+                consequatur odit dolorum?</p>
+        </div>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequatur quo rerum! Obcaecati
+                asperiores, aperiam aut ad, et, provident cum hic similique sint fuga quidem. Blanditiis facilis
+                accusantium aut maiores?</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
