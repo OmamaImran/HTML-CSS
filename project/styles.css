@@ -15,13 +15,20 @@ nav {
 
 h2 {
     font-size: 2.5rem;
-    color: darkblue;
+    color: #1b0760;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #1b0760;
     margin-bottom: 0;
 }
 
 .paragraph {
     color: gray;
     font-size: 1rem;
+    padding: 0.25rem;
 }
 
 .nav-elements ul {
@@ -57,7 +64,7 @@ h2 {
 }
 
 .hero-btn {
-    background-color: red;
+    background-color: #ff3400;
     color: white;
     padding: 1rem 3rem;
     font-size: 1rem;
@@ -96,12 +103,16 @@ h2 {
 }
 
 .domain-search button {
-    background-color: red;
+    background-color: #ff3400;
     font-size: 1.25rem;
     color: white;
     padding: 1.25rem 5rem;
 
 
+}
+
+.domain-search button:hover {
+    background-color: #e72f01;
 }
 
 .domain-search input {
@@ -161,17 +172,23 @@ h2 {
 
 
 .card-head {
-    background-color: rgb(59, 227, 227);
+    background-color: #00d9ff;
     color: white;
     padding: 1rem;
 }
 
+.card-two {
+    width: 22%;
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+}
+
 .card-two .card-head {
-    background-color: rgb(17, 115, 176);
+    background-color: #2584ff;
 }
 
 .card-two .card-off {
-    background-color: rgb(16, 70, 142);
+    background-color: #126de4;
 }
 
 .head-centre {
@@ -182,7 +199,7 @@ h2 {
 
 .card-off {
     border-radius: 1rem 1rem 1rem 1rem;
-    background-color: rgb(59, 136, 136);
+    background-color: #02cdf1;
     padding: 0.35rem;
 }
 
@@ -193,6 +210,17 @@ h2 {
     list-style-type: none;
 }
 
+/*ask yousuf bhai */
+
+.card-body li::before {
+    content: "\2713";
+    color: green;
+    font-size: 1.5rem;
+    position: absolute;
+    margin-left: -1.5rem;
+    margin-top: -5px;
+}
+
 .card-button {
     width: 100%;
     display: flex;
@@ -201,10 +229,254 @@ h2 {
 }
 
 .card-button button {
-    box-sizing: border-box;
     width: 90%;
-    border: 2px solid darkblue;
-    color: darkblue;
+    border: 2px solid #1b0760;
+    color: #1b0760;
     padding: 1.5rem;
     border-radius: 3rem 3rem 3rem 3rem;
+}
+
+.card-button button:hover {
+    background-color: #1b0760;
+    color: white;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-head {
+    margin-top: 20rem;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 3rem;
+}
+
+.feature:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.feature .feature-logo {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    background-color: lightgrey;
+}
+
+.feature .learn-more-btn {
+    color: tomato;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.learn-more {
+    padding-top: 1.5rem;
+}
+
+.learn-more-btn::after {
+    content: " ->"
+}
+
+/* ask yousuf bhai*/
+
+.learn-more-btn::after:hover {
+    content: "   ->";
+}
+
+
+.control-panel h2 {
+    text-align: center;
+    padding-top: 4rem;
+    color: white;
+}
+
+.trapezoid {
+    height: 90vh;
+    width: 100vw;
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    margin-bottom: 5rem;
+}
+
+.panel-feature h3 {
+    color: white;
+    font-size: 2rem;
+}
+
+.panel {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+}
+
+.panel .panel-right {
+    width: 25%;
+    margin-left: 4rem;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials h2 {
+    text-align: center;
+}
+
+.testimonial {
+    display: flex;
+    width: 50%;
+    height: 60%;
+    justify-content: center;
+    align-items: start;
+    border-radius: 0.25rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 1px -1px 28px -4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    padding: 3rem;
+}
+
+.testimonial img {
+    height: 30rem
+}
+
+.testimonial-left {
+    position: relative;
+}
+
+.testimonial-left .image-red-spot {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    z-index: 4rem;
+    background-color: tomato;
+    position: absolute;
+    right: -2rem;
+    top: 1.75rem;
+}
+
+.testimonial p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 4rem;
+    color: #7a709d;
+}
+
+
+.testimonial-name {
+    margin-left: 8rem;
+    margin-top: -3rem;
+}
+
+.testimonial-name .test-name {
+    color: #1b0760;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+.testimonial-name .test-company {
+    color: gray;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.get-started {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.get-started .started {
+    width: 50%;
+    background-color: #2584ff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    display: flex;
+}
+
+.started-left {
+    width: 75%;
+}
+
+.started-left h3 {
+    color: white;
+}
+
+.started-left p {
+    color: white;
+    font-weight: 400;
+    padding-right: 2rem;
+}
+
+.started-right {
+    display: flex;
+    align-items: center;
+}
+
+.started-right button {
+    background-color: #00d9ff;
+    color: white;
+    padding: 1.25rem 3.5rem;
+    border: none;
+    border-radius: 3rem 3rem 3rem 3rem;
+    font-size: 1.25rem;
+}
+
+footer {
+    background-color: rgb(33, 32, 32);
+    margin-top: -5rem;
+    /* height: 20rem; */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+
+}
+
+.foot {
+    width: 60%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6rem;
+}
+
+.foot h5 {
+    font-size: 1.1rem;
+}
+
+.logo .footer-p {
+    text-align: center;
+    margin: 0.3rem;
+    margin-left: 2rem;
+}
+
+.foot ul,
+.footer-p {
+    list-style: none;
+    margin-left: -2.5rem;
+    font-size: 1rem;
+    color: gray
+}
+
+.foot li {
+    margin-bottom: 0.4rem;
 }
