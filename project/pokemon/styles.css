@@ -4,7 +4,6 @@ body{
     font-family: "Roboto",arial,sans-serif;
     background-image: url("images/body/body_bg.png");
     width: 100vw;
-
 }
 
 @keyframes bounce {
@@ -16,6 +15,10 @@ body{
     }
   }
 
+a{
+    font-weight: bold;
+    color:white;
+  }
 h1{
     font-family: 'Exo', sans-serif;
     color: white;
@@ -38,7 +41,7 @@ h1{
     border-left: 2px solid #DEDEDE;
 }
 
-
+/* selected page */
 .filler-logo1{
     box-shadow: -5px 0 8px -4px rgba(45, 45, 45, 0.8), 10px 0 8px -4px rgba(45, 45, 45, 0.5);
     background-color: white;
@@ -64,6 +67,15 @@ h1{
     padding: 6px;
 }
 
+.forums img:hover{
+    cursor: pointer;
+}
+
+.forum-img1:hover + .forum-img2{
+    opacity: 0.5;
+}
+
+
 .navbar{
     background-color: white;
     border-bottom: 2px solid #DEDEDE;
@@ -74,21 +86,25 @@ h1{
     
 }
 
+
 .navbar-container{
     background-color: white;
 }
 
 
 .navbar-element{
-    padding: 5px 20px;
-    padding-top: 10px;
+    /* padding: 5px 20px; */
+    padding-top: 5x;
     width: 100%;
-    height: 87px;
+    height: 70px;
     text-align: center;
 }
 .navbar-element:hover{
     cursor: pointer;
+}
 
+.navbar-element:hover p{
+    color: white;
 }
 
 
@@ -178,7 +194,7 @@ h1{
     width: 60px;
     position:fixed;
     top: 250px;
-    left: 0;
+    left: 15.1%;
     border-left: none;
 
 }
@@ -243,6 +259,17 @@ h1{
     display: flex;
 }
 
+@media screen and (max-width: 500px) {
+    .navbar , .filler{
+        display: none;
+    }
+    .cards , .cards-left-down{
+        flex-direction: column;
+    }
+    .card{
+        width: 280px;
+    }
+}
 .card{
     margin: 10px;
     display: flex;
@@ -353,9 +380,11 @@ h1{
 
 .featured-pokemon-heading{
     background-color: #232323;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
     width: 180px;
-    padding: 1px 20px;
+    height: 45px;
+    padding: 0.15px 20px;
 }
 
 .featured-container-container{
@@ -366,6 +395,7 @@ h1{
     width: 68%;
 }
 
+
 .featured-pokemon-heading h1{
     color: #919191;
 }
@@ -373,11 +403,13 @@ h1{
 .featured-grids{
     display: flex;
     border-collapse: collapse;
+    align-items: flex-start;
 }
 
 .feature{
     width: 250px;
-    height: 380px;
+    border: 2px solid #232323;
+    /* height: 380px; */
     /* border: 2px solid red */
 }
 
@@ -389,6 +421,7 @@ h1{
 
 .feature-img img{
     width: 250px;
+    opacity: 0.5;
 }
 
 .feature-content{
@@ -405,32 +438,113 @@ h1{
 
 .features-left, .features-right{
     display: flex;
+    align-items: center;
 }
 
-.feature-centre{
-    width: 350px;
+.feature-score h4, .feature3 h4{
+    height: 0;
+    margin: 0;
+    font-size: 100px;
+    opacity: 0.35;
+    text-align: center;
+    font-family: 'Exo', sans-serif;
 }
 
-.feature3 .feature-img, .feature3 .feature-content{
-    width: 350px;
+.feature3 {
+    width: 326px;
+}
+
+.feature3 .feature-img {
+    width: 326px;
 }
 
 
 .feature3 .feature-img{
     position: relative;
     height: 254px;
+
 }
 
 .feature3 .feature-img img{
     position: absolute;
     top:-40px;
     width: 300px;
+    opacity: 1;
 }
+
+.feature3 .feature-content{
+    height: auto;
+}
+
 
 .feature-name-score{
     display: flex;
     justify-content: space-between;
+}
 
+.feature-features{
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-features p{
+    color: white;
+    font-size: 15px;
+    font-family: 'Exo', sans-serif;
+}
+
+.feature-types p{
+    padding: 3px 5px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+.type1{
+    background-color: rebeccapurple;
+}
+.type2{
+    background-color: rgb(90, 157, 179);
+}
+
+.feature-r1, .feature-r2{
+    display: flex;
+    align-items: center;
+}
+
+.feature-types{
+    display: flex;
+    align-items: center;
+}
+.feature-types {
+    margin-left: 40px;
+}
+.feature-abilities{
+    margin-left: 22px;
+}
+
+
+.explore-heading-container{
+    width: 68%;
+}
+.explore-more-container{
+    display: flex;
+    justify-content: center;
+}
+
+.explore-more{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+    float: right;
+    background-color: #313131;
+    border-radius: 5px;
+    font-size: large;
+    padding:10px 20px;
+    border:none;
+}
+
+.explore-more:hover{
+    background-color:#1c1c1c;
+    cursor: pointer;
 }
 
 
@@ -439,6 +553,10 @@ h1{
     background-color: white;
     display: flex;
     margin:10px auto;
+    padding-bottom: 200px;
+    margin-bottom: -10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .new .card{
@@ -515,10 +633,131 @@ margin-top: 60px;
 margin-top: 30px;
 }
 
+.new-col33 .card-head{
+    background-color: #EE6B2F;
+    padding-left: 20px;
+}
+
+
+
 .new-centre h1{
     color:#919191;
     font-size: 30px;
     padding: 10px;
+}
+
+/* .footer{
+    background-color: #1F1F1F;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+} */
+
+footer{
+    background-color: #1F1F1F;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+.footer-signup{
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer-signup h2{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+.footer-signup input[type="email"]{
+    width: 100%;
+}
+
+.footer-signup input, .footer-signup select{
+    padding: 13px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 150px;
+}
+
+.footer-signup button{
+    background-color: #888888;
+    padding: 18px;
+    margin: 5px;
+    width: 45%;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+}
+
+.signup-checklist{
+    margin-left: 80px;
+    margin-top: 30px;
+
+}
+input[type="checkbox"]{
+    height: 30px;
+    width: 30px;
+}
+.signup-checklist p{
+    color:white;
+    font-size: medium;
+    margin: 0px;
+}
+
+.checklist-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logos{
+    display: flex;
+    margin-top: 50px;
+}
+
+.footer-logo-c1 p{
+    color: white;
+    margin-bottom:2px;
+    font-size: smaller;
+}
+
+.footer-logo-c1 p:hover{
+    cursor: pointer;
+}
+
+.footer-logo-c3{
+    color: white;
+    margin-bottom: 2px;
+    font-size: xx-small;
+}
+
+.footer-logo-c1, .footer-logo-c2, .footer-logo-c3{
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.footer-logo-c2, .footer-logo-c3{
+    border-left: 1px solid gray;
+}
+
+.footer-c3-links p:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 
