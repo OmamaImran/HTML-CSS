@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.navbar, .navbar-elements, .navbar-search, .navbar-login, .navbar-left, .navbar-right{
+    display: flex;
+}
+
+.navbar{
+    justify-content: space-between;
+    padding: 0px 200px;
+    border-bottom: 0.5px solid gray;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar-logo img{
+    height: 50px;
+}
+
+.navbar-elements{
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.navbar p{
+    font-size: 15px;
+    color: #021E00;
+}
+
+.navbar-elements p:hover{
+    cursor: pointer;
+}
+
+.navbar-right{
+    gap:30px;
+}
+
+.navbar-search{
+    border: 2px solid #E6ECE5;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    gap: 20px
+}
+
+.search-type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius : 10px;
+    border-bottom-right-radius : 10px;
+}
+
+.search-type input{
+    padding: 10px;
+    border:none;
+}
+.search-type input:focus{
+    border: none;
+}
+
+.search-type img{
+    height: 35px;
+    border-right: 1px solid #E6ECE5;
+    padding: 5px;
+}
+
+.search-button{
+    padding: 10px;
+    border-left: 2px solid #E6ECE5;
+}
+
+.navbar-login{
+    align-items: center;
+    justify-content: center;
+    gap:20px
+}
+
+.navbar-login button{
+    background-color:#198A00;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+}
+
