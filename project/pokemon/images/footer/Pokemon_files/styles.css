@@ -1,17 +1,10 @@
-* {
+body{
     margin:0;
     padding:0;
     font-family: "Roboto",arial,sans-serif;
-    box-sizing: border-box;
-    /* background-image: url("images/body/body_bg.png"); */
-
+    background-image: url("images/body/body_bg.png");
+    width: 100vw;000
 }
-
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
 
 @keyframes bounce {
     0%, 100% {
@@ -33,30 +26,17 @@ h1{
     font-size: 20px;
 }
 
-.body-container{
-    background-image: url("images/body/body_bg.png");
-    width: 100%;
-    margin-bottom: 0;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
 .filler{
     display: flex;
-    width: 100%;
+    width: 100vw;
     justify-content: center;
     border-bottom: 2px solid #DEDEDE;
     background-color: #F5F5F5;
     align-items: center;
 }
 
-.filler-navbar{
-    display: none;
-}
-
 .filler-logo{
-    height: 60px;
+    height: 45px;
     padding: 10px;
     border-left: 2px solid #DEDEDE;
 }
@@ -113,7 +93,8 @@ h1{
 
 
 .navbar-element{
-    padding-top: 5px;
+    /* padding: 5px 20px; */
+    padding-top: 5x;
     width: 100%;
     height: 70px;
     text-align: center;
@@ -129,7 +110,7 @@ h1{
 
 
 .navbar-element img{
-    height: 25px;
+    height: 30px;
     color:gray;
 }
 
@@ -205,11 +186,7 @@ h1{
     background-color: #1B53BA;
     transition: ease-in-out 300ms;
     color: white;
-}
-
-.navbar-stack{
-    display: none;
-}
+}  
 
 .login-search{
     display: flex;
@@ -217,7 +194,7 @@ h1{
     width: 60px;
     position:fixed;
     top: 250px;
-    left: 15%;
+    left: 15.1%;
     border-left: none;
 
 }
@@ -235,6 +212,7 @@ h1{
 .login-search img{
     height: 30px;
     margin: 10px 15px;
+    margin-bottom: -9px;
 }
 
 .login-button img{
@@ -281,7 +259,17 @@ h1{
     display: flex;
 }
 
-
+@media screen and (max-width: 500px) {
+    .navbar , .filler{
+        display: none;
+    }
+    .cards , .cards-left-down{
+        flex-direction: column;
+    }
+    .card{
+        width: 280px;
+    }
+}
 .card{
     margin: 10px;
     display: flex;
@@ -388,8 +376,9 @@ h1{
     background-color: #232323;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-    width: fit-content;
-    padding: 10px 20px;
+    width: 180px;
+    height: 45px;
+    padding: 0.15px 20px;
 }
 
 .featured-container-container{
@@ -558,7 +547,6 @@ h1{
     background-color: white;
     display: flex;
     margin:10px auto;
-    justify-content: center;
     padding-bottom: 200px;
     margin-bottom: -10px;
     border-bottom-left-radius: 10px;
@@ -663,7 +651,7 @@ margin-top: 30px;
 
 footer{
     background-color: #1F1F1F;
-    /* margin-top: 10px; */
+    margin-top: 10px;
     display: flex;
     justify-content: center;
 }
@@ -688,7 +676,7 @@ footer{
 }
 
 .footer-signup input[type="email"]{
-    width: 90%;
+    width: 100%;
 }
 
 .footer-signup input, .footer-signup select{
@@ -711,7 +699,8 @@ footer{
 }
 
 .signup-checklist{
-    margin: 30px;
+    margin-left: 80px;
+    margin-top: 30px;
 
 }
 input[type="checkbox"]{
@@ -722,7 +711,6 @@ input[type="checkbox"]{
     color:white;
     font-size: medium;
     margin: 0px;
-    padding: 0;
 }
 
 .checklist-item{
@@ -766,149 +754,6 @@ input[type="checkbox"]{
     cursor: pointer;
 }
 
-@media screen and (max-width: 500px) {
-    body{
-        background-image: none;
-    }   
-
-    .main-container{
-        background-image: none;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .login-search{
-        display: none;
-    }
-    .navbar , .filler .forums{
-        display: none;
-    }
-
-    .filler-logo{
-        height: 60px;
-        padding: 10px;
-        border-left: 2px solid #DEDEDE;
-    }
-    .filler{
-        justify-content: space-between;
-    }
-
-    .filler-navbar{
-        display: block;
-        padding-top: 23px;
-        padding-right: 30px;
-        height: 60px;
-    }
-
-    .navbar-stack{
-        display: flex;
-    }
-
-    .navbar-icon, .navbar-login{
-        background-color: #1c1c1c;
-        width: 15%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .navbar-icon{
-        border-right: 2px solid white;
-    }
-
-    .navbar-login{
-        border-left: 2px solid white;
-    }
-
-    .navbar-icon img, .navbar-login img{
-        height: 30px;
-        margin: 10px;
-    }
-
-    .navbar-gradient{
-        /* background-image: radial-gradient(circle, rgb(44, 41, 41), gray); */
-        background: #1c1c1c;
-        /* background: radial-gradient(circle, rgba(255,255,255,1) 1%, rgba(0,0,0,0.6923144257703081) 40%); */
-        width: 70%;
-    }
-
-    .cards.featured-grids, .new{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .cards{
-        width: 100%;
-    }
-
-    .cards-right{
-        width: 100%;
-    }
-
-    .cards-left-up, .cards-left-up img{
-        width: 300px;
-    }
-    .cards , .cards-left-down{
-        flex-direction: column;
-    }
-
-    .featured-grids .feature-centre,
-    .featured-grids .features-right{
-        display: none;
-    }
-
-    .feature , .feature img{
-        width:215px;
-    }
-
-    .featured-pokemon-heading{
-        width: fit-content;
-        padding-top: 10px;
-    }
-
-    .new{
-        flex-direction: column;
-    }
-
-    .new-col1, .new-col2, .new-col3{
-        margin-top: 0;
-    }
-
-    .footer-signup, .footer-logos{
-        flex-direction: column;
-        margin: 10px auto;
-    }
-    
-    .footer-signup .signup-checklist{
-        margin-left: 0;
-    }
-    .footer-signup *{
-        padding-left: 20px;
-    }
-    .footer input[type="email"]{
-        width: 320px;
-    }
-    .signup-countrydate{
-        padding: 0;
-    }
-
-    .checklist-item{
-        gap:30px;
-    }
-
-    .checklist-item a{
-        padding: 0;
-    }
-
-    .footer-logo-c1, .footer-logo-c2, .footer-logo-c3{
-        border:none;
-        border-bottom: 2px solid black;
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-}
 
 
 
