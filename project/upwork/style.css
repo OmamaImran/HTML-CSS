@@ -19,6 +19,10 @@ h1{
     font-family: Rza,Rza-fallback,Georgia,serif;
 }
 
+.navbar-media{
+    display: none;
+}
+
 .navbar, .navbar-elements, .navbar-search, .navbar-login, .navbar-left, .navbar-right{
     display: flex;
 }
@@ -353,14 +357,9 @@ h1{
 
 .features{
     display: flex;
-    width: 60%;
-    margin: 30px auto;
+    width: 70%;
+    margin: 100px auto;
     justify-content: space-around;
-}
-.feature-left{
-    border: 2px solid black;
-    height: 500px;
-    width: 500px;
 }
 
 .feature-left img{
@@ -389,6 +388,9 @@ h1{
     background-color: white;
     color: var(--light-green);
     border: 2px solid var(--light-green);
+    border-radius: 50px;
+    padding: 15px 20px;
+    font-weight: bold;
 }
 
 .green-opposite:hover{
@@ -398,8 +400,8 @@ h1{
 
 .enterprise{
     display: flex;
-    width: 60%;
-    margin: 20px auto;
+    width: 70%;
+    margin: 100px auto;
     border-radius: 30px;
     overflow: hidden;
     color: white;
@@ -418,7 +420,7 @@ h1{
     gap:20px;
 }
 
-.enterprise-left h1{
+.enterprise-left h1, .talent h1{
     font-size: 50px;
 }
 
@@ -449,26 +451,374 @@ h1{
     cursor: pointer;
 }
 
-.client{
+.clients{
     display: flex;
-    width: 60%;
-    margin: 20px auto;
+    width: 70%;
+    margin: 100px auto;
     background-image: url("images/body/find-talent-2x.jpg");
+    flex-direction: column;
+    background-size:cover;
+    gap:25px;
+    padding: 20px;
+    color:white;
+    border-radius: 10px;
 }
 
+.clients-head h1{
+    font-size: 80px;  
+    margin-top: 20px;  
+}
+.clients-cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.clients-card{
+    background-color: var(--light-light-green);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 30%;
+}
+
+.clients-card h2{
+    font-size: 30px;
+}
+
+.clients-card p{
+    font-size: 20px;
+}
+
+.clients-card:hover{
+    background-color: white;
+    color:var(--light-light-green);
+    cursor: pointer;
+}
+
+.why-upwork{
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    gap:50px;
+    justify-content: space-around;
+}
+
+.why-upwork-left{
+    width: 70%;
+    display: flex;
+    background-color: #F2F7F2;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.why-upwork-left > img{
+    height: 550px;
+    position: relative;
+    right: -150px;
+    /* top:50px; */
+}
+
+
+.why-upwork-left-content{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.why-upwork-left h1{
+    font-size: 65px;
+}
+
+.why-upwork-right{
+    background-color: var(--light-green);
+    height: 600px;
+    width: 30%;
+    border-radius: 10px;
+    padding-top: 25%;
+    padding-left: 10px;
+    color: white;
+    gap:30px;
+}
+
+.why-upwork-features{
+    display: flex;
+    flex-direction: column;
+}
+
+.why-upwork-feature{
+    display: flex;
+    gap:5px;
+    margin-top: 15px;
+}
+
+.why-upwork-feature img{
+    height: 30px;
+}
+
+.talent, .startup{
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+.talent-left img{
+    height: 550px;
+}
+
+.talent-right{
+    background-color: #1F57C3;
+    padding: 60px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.talent h1{
+    margin-top: 30px;
+}
+.talent p{
+    margin-top: 10px;
+}
+
+.talent-points{
+    display: flex;
+    border-top: 1px solid white;
+    padding-top: 0px;
+    gap:15px;
+}
+
+.talent button{
+    margin-top: 20px;
+    color:#1F57C3;
+}
+
+.startup{
+    flex-direction: column;
+}
+.startup > h1{
+    font-size: 60px;
+    color: var(--dark-green);
+}
+
+.startup-cards{
+    display: flex;
+    gap:30px;
+    margin-top: 20px;
+}
+
+.startup-cards h1{
+    font-size: 25px;
+}
+.startup-card{
+    width: 50%;
+    padding: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    border-radius: 10px;
+}
+
+.startup-card p{
+    color: var(--lightest-green);
+    margin: 10px 0;
+}
+.startup-card-top h1{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.startup-card-bottom-points{
+    display: flex;
+    gap:30px;
+    border-top: 1px solid white;
+    padding-top: 20px;
+}
+
+.startup-card-one{
+    background-color: #13544E;
+}
+.startup-card-two{
+    background-color: #BC511B;
+}
+.startup-card img{
+    height: 70px;
+}
+
+.banner{
+    width: 70%;
+    display: flex;
+    margin: 100px auto;
+    background-color: #F7FAF7;
+    padding: 30px;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+.banner h1{
+    margin: 5px 0;;
+}
+
+.banner button{
+    margin-top: 40px;
+}
+
+.banner img{
+    height: 130px;
+}
+
+.skills{
+    width: 60%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    margin: 100px auto;
+}
+.skills-r1 h2{
+    font-size: 35px;
+    margin: 10px 0;
+    color: #ccd2c9;
+}
+
+
+.skills-r1 h2:first-child,.skills-r1 h2:hover {
+    color:var(--light-light-green);
+    cursor: pointer;
+}
+.skills p{
+    font-size: 25px;
+    margin: 15px 0;
+    color: #5E6D55;
+}
+
+.skills p:hover{
+    color:var(--light-light-green);
+    cursor: pointer;
+}
+.skills-c2{
+    display: flex;
+    gap:50px;
+}
+.footer{
+    background-color: var(--dark-green);
+    width: 70%;
+    margin: 100px auto 10px auto;
+    display: flex;
+    color:white;
+    padding: 30px;
+    border-radius: 10px;
+    flex-direction: column;
+    gap:80px
+}
+
+.footer-lists{
+    display: flex;
+    flex-direction: row;
+    /* gap:50px; */
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.footer-lists p{
+    margin: 10px 0;
+    font-size: 15px;
+}
+.footer-lists p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.footer-lists p:first-child{
+    margin-bottom: 20px;
+}
+.footer-lists p:first-child:hover{
+    text-decoration: none;
+}
+
+.credentials{
+    display: flex;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+.credentials p{
+    margin-right: 5px;
+}
+.follow, .mobile-app{
+    display: flex;
+    align-items: center;
+    gap:4px
+}
+.footer-logo{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 4px;
+}
+
+.footer-logo:hover{
+    background-color: #000000;
+    opacity: 0.1;
+    cursor: pointer;
+}
+.credentials img{
+    height: 25px;
+}
+
+.footer-bottom-list{
+    display: flex;
+    gap:20px;
+    padding-top: 10px;
+}
+
+.footer-bottom-list p:hover:first-child{
+    text-decoration: none;
+}
+.footer-bottom-list p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 @media screen and (max-width:400px){
      
     .hero h1{
         font-size: 40px;
     }
-    .navbar-elements, .navbar-right, .secondary-navbar{
+    .navbar-elements, .navbar-right, .secondary-navbar, .navbar{
         display: none;
     }
 
-    .navbar{
-        width: 100%;
-        overflow: hidden;
+    .navbar-media{
+        display: contents;
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu{
+        height: 30px;
+    }
+
+    .media-upwork-logo{
+        height: 50px;
+    }
+
+    .navbar-media-left img{
+        height: 30px;
+    }
+
+    .navbar-media-right, .navbar-media-left{
+        display: flex;
+        align-items: center;
+        gap:30px;
+        padding: 10px;
     }
 
     .hero{
@@ -509,11 +859,11 @@ h1{
         padding: 20px;
         border-radius: 50px;
     }
-    .chat h1{
+    .chat h1, .enterprise h1, .clients h1{
         font-size: 30px;
     }
 
-    .chat p{
+    .chat p, .enterprise p, .clients p{
         font-size: 15px;
     }
     .chat-box{
@@ -544,18 +894,159 @@ h1{
 
     .features{
         flex-direction: column;
-        width: 95%;
+        width: 100%;
         gap: 20px;
     }
 
-    .feature-left{
-        margin: auto;
+    .feature-left img{
         height: 300px;
         width: 300px;
     }
 
+    .feature-left{
+        margin: 10px;
+    }
+
     .feature-right{
         width: 100%;
+    }
+
+    .enterprise{
+        width: 100%;
+        flex-direction: column;
+        border-radius:0px;
+    }
+
+    .enterprise-left{
+        padding-left: 10px;
+    }
+
+    .enterprise-left h1{
+        font-size: 30px;
+    }
+
+    .clients{
+        width: 95%;
+    }
+
+    .clients h1{
+        margin-top: 70px;
+    }
+
+    .clients-cards{
+        flex-direction: column;
+        gap:10px;
+    }
+    .clients-card{
+        width: 95%;
+    }
+
+    .why-upwork-left > img{
+        display: none;
+    }
+
+    .why-upwork{
+        flex-direction: column;
+        width: 100%;
+        gap:8px;
+    }
+
+    .why-upwork-left h1{
+        font-size: 35px;
+    }
+
+    .why-upwork-left, .why-upwork-right{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .why-upwork-right{
+        height: fit-content;
+        padding: 10px;
+    }
+
+    .talent, .startup{
+        width: 100%;
+        flex-direction: column;
+        gap:0;
+        border-radius: 0;
+    }
+    .talent-left img{
+        height: 400px;
+    }
+
+    .talent-right{
+        padding: 30px;
+    }
+
+    .startup{
+        width: 95%;
+    }
+
+    .startup h1{
+        font-size: 40px;
+        margin-left: 15px;
+    }
+    .startup-cards{
+        flex-direction: column;
+    }
+
+    .startup-card{
+        width: 100%;
+    }
+
+    .startup-card-top h1{
+        font-size: 20px;
+    }
+
+    .startup-card-top img{
+        height: 40px;
+    }
+
+    .banner{
+        flex-direction: column;
+    }
+
+    .banner img{
+        margin-top: 20px;
+        height: 100px;
+    }
+
+    .skills {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .skills h1{
+        font-size: 40px;
+    }
+    .skills p{
+        font-size: 20px;
+    }
+
+    .footer{
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer-lists{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: 0px;
+    }
+    .footer-lists *:first-child{
+        font-size: 25px;
+    }
+
+    .credentials{
+        flex-direction: column;
+        align-items: center;
+        gap:15px;
+    }
+    .footer-bottom-list{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
 }
