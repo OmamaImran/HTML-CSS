@@ -7,68 +7,71 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="navbar">
-            <div class="navbar-left">
-                <div class="navbar-logo">
-                    <img src="images/navbar/Upwork-Logo-1.png" alt="Upwork Logo">
+    <div class="navbar-container">
+        <nav>
+            <div class="navbar">
+                <div class="navbar-left">
+                    <div class="navbar-logo">
+                        <img src="images/navbar/Upwork-Logo-1.png" alt="Upwork Logo">
+                    </div>
+                    <div class="navbar-elements">
+                        <div class="navbar-element">
+                            <p>Find Talent</p>
+                            <img src="images/navbar/dropdown-arrow.png" alt="dropdown-arrow">
+                        </div>
+                        <div class="navbar-element">
+                            <p>Find Work</p>
+                            <img src="images/navbar/dropdown-arrow.png" alt="dropdown-arrow">
+                        </div>
+                        <div class="navbar-element">
+                            <p>Why Upwork</p>
+                            <img src="images/navbar/dropdown-arrow.png" alt="dropdown-arrow">
+                        </div>
+                        <div class="navbar-element">
+                            <p>Enterprise</p>
+                            <img src="images/navbar/dropdown-arrow.png" alt="dropdown-arrow">
+                        </div>
+                    </div>
                 </div>
-                <div class="navbar-elements">
-                    <div class="navbar-element">
-                        <p>Find Talent</p>
-                        <img src="images/navbar/dropdown-arrow.png" alt="dropdown-arrow">
+                <div class="navbar-right">
+                    <div class="navbar-search">
+                        <div class="search-type">
+                            <div class="search-bar-img">
+                                <img src="images/navbar/9349901.png" alt="Search">
+                            </div>
+                            <input type="text" placeholder="Search" name="Search">
+                        </div>
+                        <div class="divider"></div>
+                        <div class="search-button">
+                            <p>Talent</p><img src="images/navbar/dropdown-arrow.png" alt="dropdown-arrow">
+                        </div>
                     </div>
-                    <div class="navbar-element">
-                        <p>Find Work</p>
-                        <img src="images/navbar/dropdown-arrow.png" alt="dropdown-arrow">
-                    </div>
-                    <div class="navbar-element">
-                        <p>Why Upwork</p>
-                        <img src="images/navbar/dropdown-arrow.png" alt="dropdown-arrow">
-                    </div>
-                    <div class="navbar-element">
-                        <p>Enterprise</p>
-                        <img src="images/navbar/dropdown-arrow.png" alt="dropdown-arrow">
+                    <div class="navbar-login">
+                        <p>Login</p>
+                        <button class="green-button">Sign Up</button>
                     </div>
                 </div>
             </div>
-            <div class="navbar-right">
-                <div class="navbar-search">
-                    <div class="search-type">
-                        <img src="images/navbar/9349901.png" alt="Search">
-                        <input type="text" placeholder="Search" name="Search">
-                    </div>
-                    <div class="search-button">
-                        <p>Talent</p><img src="images/navbar/dropdown-arrow.png" alt="dropdown-arrow">
-                    </div>
-                </div>
-                <div class="navbar-login">
-                    <p>Login</p>
-                    <button class="green-button">Sign Up</button>
-                </div>
+        </nav>
+        <div class="navbar-media">
+            <div class="navbar-media-right">
+                <img class="menu" src="images/navbar/icons8-menu-50.png" alt="menu">
+                <img class="media-upwork-logo" src="images/navbar/Upwork-Logo-1.png" alt="Upwork logo">
+            </div>
+            <div class="navbar-media-left">
+                <p>Signup</p>
+                <img src="images/navbar/9349901.png" alt="Search">
             </div>
         </div>
-    </nav>
-
-    <div class="navbar-media">
-        <div class="navbar-media-right">
-            <img class="menu" src="images/navbar/icons8-menu-50.png" alt="menu">
-        </div>
-        <img class="media-upwork-logo" src="images/navbar/Upwork-Logo-1.png" alt="Upwork logo">
-        <div class="navbar-media-left">
-            <p>Signup</p>
-            <img src="images/navbar/9349901.png" alt="Search">
-        </div>
-    </div>
-
-    <div class="secondary-navbar navbar">
-        <p>Development & IT</p>
-        <p>AI Services</p>
-        <p>Design & Creative</p>
-        <p>Sales & Marketing</p>
-        <p>Admin & Customer Support</p>
-        <div class="navbar-element">
-            <p>More</p><img src="images/navbar/dropdown-arrow.png" alt="dropdown-arrow">
+        <div class="secondary-navbar navbar">
+            <p>Development & IT</p>
+            <p>AI Services</p>
+            <p>Design & Creative</p>
+            <p>Sales & Marketing</p>
+            <p>Admin & Customer Support</p>
+            <div class="navbar-element">
+                <p>More</p><img src="images/navbar/dropdown-arrow.png" alt="dropdown-arrow">
+            </div>
         </div>
     </div>
 
@@ -223,7 +226,7 @@
 
     <div class="features">
         <div class="feature-left">
-            <img src="images/body/enterprise.png" alt="Interface">
+            <!-- <img src="images/body/enterprise-2023.webp" alt="Interface"> -->
         </div>
         <div class="feature-right">
             <h1>Up your work game, it&apos;s easy</h1>
@@ -288,31 +291,32 @@
             <button class="white-button">Learn More</button>
         </div>
         <div class="enterprise-right">
-            <img src="images/body/enterprise.png">
         </div>
     </div>
 
-    <div class="clients">
-        <h2>For Clients</h2>
-        <div class="clients-head">
-            <h1>Find talent <br> your way</h1>
-        </div>
-        <p>Work with the largest network of independent <br>professionals and get things done—from quick <br>turnarounds to big transformations.</p>
-        <div class="clients-cards">
-            <div class="clients-card">
-                <h2>Post a job <br> and hire a pro</h2>
-                <p>talent marketplace</p>
+    <div class="clients-container">
+        <div class="clients">
+            <h2>For Clients</h2>
+            <div class="clients-head">
+                <h1>Find talent <br> your way</h1>
             </div>
-            <div class="clients-card">
-                <h2>Browse and<br> Buy projects</h2>
-                <p>Project Catalog</p>
+            <p>Work with the largest network of independent <br>professionals and get things done—from quick <br>turnarounds to big transformations.</p>
+            <div class="clients-cards">
+                <div class="clients-card">
+                    <h2>Post a job <br> and hire a pro</h2>
+                    <p>talent marketplace</p>
+                </div>
+                <div class="clients-card">
+                    <h2>Browse and<br> Buy projects</h2>
+                    <p>Project Catalog</p>
+                </div>
+                <div class="clients-card">
+                    <h2>Get advice from an <br> industry expert</h2>
+                    <p>Consultations</p>
+                </div>
             </div>
-            <div class="clients-card">
-                <h2>Get advice from an <br> industry expert</h2>
-                <p>Consultations</p>
-            </div>
-        </div>
     </div>
+   
 
 
     
@@ -320,7 +324,7 @@
         <div class="why-upwork-left">
             <div class="why-upwork-left-content">
                 <h1>Why businesses <br> turn to Upwork</h1>
-                <div class="keypoints upwork-keypoints">
+                <div class="upwork-keypoints">
                     <div class="feature">
                         <div class="feature-icon">
                             <img src="images/body/icons/icons8-add-file-64.png" alt="file-icon">
@@ -377,10 +381,14 @@
         </div>
     </div>
 
+    <div class="sign-up-for-talent">
+        <h1>Sign up to hire <br> for any job</h1>
+        <button class="green-button">Find Talent</button>
+    </div>
 
     <div class="talent">
         <div class="talent-left">
-            <img src="images/body/for-talent.png" alt="woman with laptop">
+            <!-- <img src="images/body/for-talent.png" alt="woman with laptop"> -->
         </div>
         <div class="talent-right">
             <div class="talent-top">
