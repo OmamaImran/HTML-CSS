@@ -7,10 +7,11 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
 </head>
 <body>
-    <nav class="flex items-center border-b-1 border border-black-500 justify-around text-sm">
+    <nav class="flex items-center text-xs lg:text-sm max-w-7xl mx-auto justify-between">
         <div class="flex items-center gap-5">
-            <img class="h-[62px]" src="images/navbar/Upwork-Logo-1.png" alt="Upwork logo">
-            <ul class="flex gap-3">
+            <img class="h-[30px] ml-3 md:hidden" src="images/navbar/icons8-menu-50.png" alt="hamburger-menu">
+            <img class="h-[50px] m-0 lg:h-[62px] md:ml-5" src="images/navbar/Upwork-Logo-1.png" alt="Upwork logo">
+            <ul class=" hidden md:flex gap-3 ">
                 <div class="items-center flex gap-1">
                     <li>Find Work</li> <img class="h-2" src="images/navbar/dropdown-arrow.png" alt="dropdown-arrow">
                 </div>
@@ -23,7 +24,7 @@
             </ul>
         </div>
         <div class="flex items-center gap-10">
-            <div class="flex items-center gap-5 p-0 h-10 rounded-full border border-[#E4EBE4]">
+            <div class="hidden md:flex md:items-center md:gap-5 md:p-0 md:h-10 md:rounded-full md:border md:border-[#E4EBE4]">
                 <div class="flex items-center gap-3 p-2 ">
                     <div class="flex items-center rounded ">
                         <img class="h-[25px]" src="images/navbar/9349901.png" alt="Search-icon">
@@ -36,36 +37,41 @@
                     </div>
                 </div>
             </div>
-            <button>Login</button>
-            <button class="rounded-full bg-[#198A00] text-white font-bold py-2 px-6">Sign Up</button>
+            <button class="hidden lg:block">Login</button>
+            <button class=" mr-4 lg:rounded-full lg:bg-[#198A00] lg:text-white lg:font-bold lg:py-2 lg:px-6">Sign Up</button>
         </div>
     </nav>
 
-    <div class="py-2 w-1/4 justify-center">
-        <div class="w-full items-start">
-            <ul class="flex gap-5">
-                <li>Developement & AI</li>
-                <li>Developement & AI</li>
-                <li>Developement & AI</li>
-                <li>Developement & AI</li>
-                <li>Developement & AI</li>
-                <li>Developement & AI</li>
-            </ul>
-        </div>
-    </div>
+    <div class="border-b border-black-500"></div>
 
-    <div class="gap-0 flex items-center justify-center">
-        <div class="flex flex-col gap-10">
-            <h1 class="text-8xl w-1/2 text-[#198A00]">How work should work</h1>
-            <div class="">
-                <p class="text-2xl text-[#5E6D55]">Forget the old rules. You can have the best people.</p>
-                <p class="text-2xl text-[#5E6D55]">Right now. Right here.</p>
+    <!-- <div class="mx-auto max-w-7xl">
+        <div class="py-2 w-full">
+            <div class="w-3/4 ">
+                <ul class="flex gap-5">
+                    <li>Developement & AI</li>
+                    <li>Developement & AI</li>
+                    <li>Developement & AI</li>
+                    <li>Developement & AI</li>
+                    <li>Developement & AI</li>
+                    <li>Developement & AI</li>
+                </ul>
             </div>
-            <button class="rounded-full bg-[#198A00] max-w-fit text-white font-bold py-2 px-6">Get Started</button>
-        </div>
-        <div>
-            <img class="h-80" src="images/hero/searching-talent@1x.webp" alt="">
-        </div>
+        </div> -->
+
+
+        <!-- <div class="flex items-center justify-between">
+            <div class="flex flex-col gap-10">
+                <h1 class="text-8xl  text-[#198A00]">How work should work</h1>
+                <div class="">
+                    <p class="text-2xl text-[#5E6D55]">Forget the old rules. You can have the best people.</p>
+                    <p class="text-2xl text-[#5E6D55]">Right now. Right here.</p>
+                </div>
+                <button class="rounded-full bg-[#198A00] max-w-fit text-white font-bold py-2 px-6">Get Started</button>
+            </div>
+            <div>
+                <img class="h-80" src="images/hero/searching-talent@1x.webp" alt="">
+            </div>
+        </div> -->
     </div>
 </body>
 </html>
