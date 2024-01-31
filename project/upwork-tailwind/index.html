@@ -14,55 +14,105 @@
                     primary: '#198A00',
                     lightest: '#5E6D55',
                     background: '#F7FAF7',
-                    sea: '#13544E'
-                    
+                    sea: '#13544E',
+                    sea_light : '#91E6B3',
+                    hover: '#20A800',
+                    lightbackground: '#F2F7F2',
+                    darkbackground: '#021E00',
+                    textlight: '#D5E0D5'
+                },
+                blue: '#1F57C3',
+                orange: '#BC511B',
+                gray: {
+                    text: '#D3D3C5'
                 }
               },
+              margin:{
+                div_gap : '100px',
+                m45 : '45px',
+                m40 : '40px',
+                m50: '50px',
+                m90: '90px',
+                m10: '10px'
+              },
+              padding: {
+                p45: '45px',
+                p50p: '50%',
+                p25p: '25%'
+              },
+              width: {
+                w90p : '90%',
+                w80p : '80%',
+                w70p : '70%',
+                w60p : '60%',
+                w50p : '50%',
+                w45p : '45%',
+                w40p : '40%',
+                w30: '30%'
+              },
+              height: {
+                h800: '800px',
+                h500: '500px',
+                h400: '400px',
+                h200: '200px',
+                h70: '70px',
+                h60: '60px',
+                h50: '50px',
+                h40: '40px',
+                h30: '30px',
+                h25: '25px'
+              },
+              gap: {
+                g60: '60px',
+                g50: '50px',
+                gx30: '30px',
+                gx330: '330px',
+              }
             },
           },
         }
       </script>
+      <script src="index.js"></script>
     <style>
         h1 {
             font-family: Rza, Rza-fallback, Georgia, serif;
-        }
-
-        
+        }    
     </style>
 </head>
 <body>
+    
     <nav class="flex items-center text-xs lg:text-base max-w-7xl mx-auto justify-between">
         <div class="flex items-center gap-5">
-            <img class="h-[30px] ml-3 md:hidden" src="images/navbar/icons8-menu-50.png" alt="hamburger-menu">
-            <img class="h-[50px] m-0 lg:h-[62px] md:ml-5" src="images/navbar/Upwork-Logo-1.png" alt="Upwork logo">
+            <img class="h-h30 ml-3 md:hidden" src="images/navbar/icons8-menu-50.png" alt="hamburger-menu">
+            <img class="h-h50 m-0 lg:h-[62px] md:ml-5" src="images/navbar/Upwork-Logo-1.png" alt="Upwork logo">
             <ul class=" hidden md:flex gap-3 ">
-                <div class="items-center flex gap-1">
+                <div class="items-center flex gap-1 cursor-pointer">
                     <li>Find Work</li> <img class="h-2" src="images/navbar/dropdown-arrow.png" alt="dropdown-arrow">
                 </div>
-                <div class="items-center flex gap-1">
+                <div class="items-center flex gap-1 cursor-pointer">
                     <li>Find Work</li> <img class="h-2" src="images/navbar/dropdown-arrow.png" alt="dropdown-arrow">
                 </div>
-                <div class="items-center flex gap-1">
+                <div class="items-center flex gap-1 cursor-pointer">
                     <li>Find Work</li> <img class="h-2" src="images/navbar/dropdown-arrow.png" alt="dropdown-arrow">
                 </div>
             </ul>
         </div>
         <div class="flex items-center gap-10">
-            <div class="hidden md:flex md:items-center md:gap-5 md:p-0 md:h-10 md:rounded-full md:border md:border-[#E4EBE4]">
-                <div class="flex items-center gap-3 p-2 ">
-                    <div class="flex items-center rounded ">
-                        <img class="h-[25px]" src="images/navbar/9349901.png" alt="Search-icon">
-                        <input class="border-none p-0 rounded-full focus:border-none" type="text" placeholder="Search">
+            <div class="hidden md:flex md:items-center md:gap-5 md:p-0 md:h-10 md:rounded-full md:border md:border-black-500 hover:bg-gray-100">
+                <div class="flex items-center gap-1 p-1 ">
+                    <div class="flex items-center rounded-full hover:bg-white px-3 py-1 cursor-pointer">
+                        <img class="h-h25" src="images/navbar/9349901.png" alt="Search-icon">
+                        <input class="border-none p-0 rounded-full focus:ring-0 bg-transparent" type="text" placeholder="Search">
                     </div>
-                    <div class="w-0.5 h-5 bg-[#E4EBE4]"></div>
-                    <div class="flex items-center gap-1 border-[#E4EBE4]">
+                    <div class="w-0.5 h-5 bg-gray-200"></div>
+                    <div class="flex items-center gap-1 border-black-500 cursor-pointer rounded-full hover:bg-white px-3 py-1">
                         <p>Talent</p>
                         <img class="h-2" src="images/navbar/dropdown-arrow.png" alt="drop down arrow">
                     </div>
                 </div>
             </div>
             <button class="hidden lg:block">Login</button>
-            <button class="mr-4 lg:rounded-full lg:bg-green-primary lg:text-white lg:font-bold lg:py-2 lg:px-6">Sign Up</button>
+            <button class="mr-4 lg:rounded-full lg:bg-green-primary lg:text-white lg:font-bold lg:py-2 lg:px-6 hover:bg-green-hover">Sign Up</button>
         </div>
     </nav>
 
@@ -73,33 +123,33 @@
             <div class="py-2 w-full">
                 <div class="">
                     <ul class="flex gap-5">
-                        <li>Developement & AI</li>
-                        <li>Developement & AI</li>
-                        <li>Developement & AI</li>
-                        <li>Developement & AI</li>
-                        <li>Developement & AI</li>
-                        <li>Developement & AI</li>
+                        <li class="hover:text-green-primary hover:underline hover:decoration-solid cursor-pointer">Developement & AI</li>
+                        <li class="hover:text-green-primary hover:underline hover:decoration-solid cursor-pointer">Developement & AI</li>
+                        <li class="hover:text-green-primary hover:underline hover:decoration-solid cursor-pointer">Developement & AI</li>
+                        <li class="hover:text-green-primary hover:underline hover:decoration-solid cursor-pointer">Developement & AI</li>
+                        <li class="hover:text-green-primary hover:underline hover:decoration-solid cursor-pointer">Developement & AI</li>
+                        <li class="hover:text-green-primary hover:underline hover:decoration-solid cursor-pointer">Developement & AI</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div class="flex items-center justify-between mt-[45px]">
+        <div class="flex items-center justify-between mt-m45">
             <div class="flex flex-col gap-8">
-                <h1 class="text-5xl lg:text-8xl  text-green-primary w-[70%]">How work should work</h1>
+                <h1 class="text-5xl lg:text-8xl  text-green-primary w-w70">How work should work</h1>
                 <div class="">
                     <p class="text-lg lg:text-2xl text-green-lightest">Forget the old rules. You can have the best people.</p>
                     <p class="text-lg lg:text-2xl text-green-lightest">Right now. Right here.</p>
                 </div>
-                <button class="rounded-full bg-green-primary max-w-fit text-white font-bold py-2 px-6">Get Started</button>
+                <button class="rounded-full bg-green-primary max-w-fit text-white font-bold py-2 px-6 hover:bg-green-hover">Get Started</button>
             </div>
             <div class="hidden lg:block">
                 <img class="h-80" src="images/hero/searching-talent@1x.webp" alt="">
             </div>
         </div>
 
-        <div class="mb-[45px] flex flex-col gap-5">
-            <p class="text-sm lg:text-xl text-green-lightest mt-[45px]">Trusted by</p>
+        <div class="mb-m45 flex flex-col gap-5">
+            <p class="text-sm lg:text-xl text-green-lightest mt-m45">Trusted by</p>
             <div class="flex gap-4">
                 <img class="h-5 md:h-8" src="images/hero/logos/Microsoft_logo_(2012).svg.png" alt="Microsoft_logo_">
                 <img class="h-5 md:h-8" src="images/hero/logos/Airbnb_Logo_Bélo.svg.png" alt="Microsoft_logo_">
@@ -107,11 +157,11 @@
             </div>
         </div>
 
-        <div class="flex flex-col gap-7 md:gap-3 rounded-2xl p-3 bg-gradient-to-r from-purple-500 to-pink-500 md:p-[45px] md:rounded-bl-[150px] md:mb-[180px] mb-[120px]">
-          <h1 class="text-2xl text-[#13544e] md:text-6xl">Get instant answer to your upwork questions</h1>
+        <div class="flex flex-col gap-7 md:gap-3 rounded-2xl p-3 bg-gradient-to-r from-purple-500 to-pink-500 md:p-p45 md:rounded-bl-[150px] md:mb-[180px] mb-[120px]">
+          <h1 class="text-2xl text-green-sea md:text-6xl">Get instant answer to your upwork questions</h1>
           <div class="flex gap-2 mb-8">
-            <img class="h-[50px] md:h-[100px] drop-shadow-[0_0px_5px_rgba(255,255,255,0.75)] md:hidden" src="images/chat/6092b7514135708162a4be92_Favicon 256.png" alt="upwork-logo">
-              <p class="text-[#13544e] md:text-2xl md:font-semibold">Start  conversation powered by OpenAI technologies.</p>
+            <img class="h-h50 md:h100 drop-shadow-[0_0px_5px_rgba(255,255,255,0.75)] md:hidden" src="images/chat/6092b7514135708162a4be92_Favicon 256.png" alt="upwork-logo">
+              <p class="text-green-sea md:text-2xl md:font-semibold">Start  conversation powered by OpenAI technologies.</p>
           </div>
           <div class="flex gap-10 lg:mx-auto">
                 <img class="hidden md:block md:h-[170px] md:drop-shadow-[0_0px_25px_rgba(255,255,255,0.75)] md:rounded-full" src="images/chat/6092b7514135708162a4be92_Favicon 256.png" alt="upwork-logo">
@@ -121,23 +171,23 @@
                         <p>Hi 👋  I'm here to help you up your work game with a little help from AI.</p>
                         <p>But first, are you a client hiring for a project? Or a freelancer looking for work? 👀</p>
                         <div class="flex flex-col gap-5">
-                            <p class="border-2 border-green-lightest p-1 rounded-lg max-w-fit text-green-primary">I'm a client looking to hire for a project</p>
-                            <p class="border-2 border-green-lightest p-1 rounded-lg max-w-fit text-green-primary">I'm a freelancer looking for work</p>
+                            <p class="border-2 border-green-lightest p-1 rounded-lg max-w-fit text-green-primary hover:bg-gray-100 cursor-pointer">I'm a client looking to hire for a project</p>
+                            <p class="border-2 border-green-lightest p-1 rounded-lg max-w-fit text-green-primary hover:bg--gray-100 cursor-pointer">I'm a freelancer looking for work</p>
                         </div>
                     </div>
                 </div>
           </div>
         </div>
 
-        <div class="flex flex-col gap-8 mb-[100px]">
+        <div class="flex flex-col gap-8 mb-div_gap">
             <div>
                 <h1 class="text-3xl md:text-5xl">Browse talent by category</h1>
                 <p class="text-green-lightest md:text-lg">Looking for work? <span class="text-green-primary text-underline">Browse here</span></p>
             </div>
-            <div class="grid md:grid-cols-2  lg:grid-cols-4 gap-5">
-                <div class="bg-green-background rounded-lg p-5 pb-8 flex flex-col gap-3 w-full">
+            <div class="grid md:grid-cols-2  lg:grid-cols-4 gap-2 lg:gap-5">
+                <div class="bg-green-background rounded-lg p-3 lg:p-5 lg:m-0 lg:pb-8 flex flex-col gap-3 w-full cursor-pointer hover:bg-gray-100">
                     <p class="text-2xl">Development & IT</p>
-                    <div class="w-[70%] flex justify-between text-green-lightest">
+                    <div class="w-w70 flex justify-between text-green-lightest">
                         <div class="flex items-center gap-1">
                             <img class="h-8" src="images/cards/icons8-star-64.png" alt="star">
                             <p>3.5/5</p>
@@ -145,9 +195,9 @@
                         <p>294 skills</p>
                     </div>
                 </div>
-                <div class="bg-green-background rounded-lg p-5 pb-8 flex flex-col gap-3 w-full">
+                <div class="bg-green-background rounded-lg p-3 lg:p-5 pb-8 flex flex-col gap-3 w-full cursor-pointer hover:bg-gray-100">
                     <p class="text-2xl">Development & IT</p>
-                    <div class="w-[70%] flex justify-between text-green-lightest">
+                    <div class="w-w70 flex justify-between text-green-lightest">
                         <div class="flex items-center gap-1">
                             <img class="h-8" src="images/cards/icons8-star-64.png" alt="star">
                             <p>3.5/5</p>
@@ -155,9 +205,9 @@
                         <p>294 skills</p>
                     </div>
                 </div>
-                <div class="bg-green-background rounded-lg p-5 pb-8 flex flex-col gap-3 w-full">
+                <div class="bg-green-background rounded-lg p-3 lg:p-5 pb-8 flex flex-col gap-3 w-full cursor-pointer hover:bg-gray-100">
                     <p class="text-2xl">Development & IT</p>
-                    <div class="w-[70%] flex justify-between text-green-lightest">
+                    <div class="w-w70 flex justify-between text-green-lightest">
                         <div class="flex items-center gap-1">
                             <img class="h-8" src="images/cards/icons8-star-64.png" alt="star">
                             <p>3.5/5</p>
@@ -165,9 +215,9 @@
                         <p>294 skills</p>
                     </div>
                 </div>
-                <div class="bg-green-background rounded-lg p-5 pb-8 flex flex-col gap-3 w-full">
+                <div class="bg-green-background rounded-lg p-3 lg:p-5 pb-8 flex flex-col gap-3 w-full cursor-pointer hover:bg-gray-100">
                     <p class="text-2xl">Development & IT</p>
-                    <div class="w-[70%] flex justify-between text-green-lightest">
+                    <div class="w-w70 flex justify-between text-green-lightest">
                         <div class="flex items-center gap-1">
                             <img class="h-8" src="images/cards/icons8-star-64.png" alt="star">
                             <p>3.5/5</p>
@@ -175,9 +225,9 @@
                         <p>294 skills</p>
                     </div>
                 </div>
-                <div class="bg-green-background rounded-lg p-5 pb-8 flex flex-col gap-3 w-full">
+                <div class="bg-green-background rounded-lg p-3 lg:p-5 pb-8 flex flex-col gap-3 w-full cursor-pointer hover:bg-gray-100">
                     <p class="text-2xl">Development & IT</p>
-                    <div class="w-[70%] flex justify-between text-green-lightest">
+                    <div class="w-w70 flex justify-between text-green-lightest">
                         <div class="flex items-center gap-1">
                             <img class="h-8" src="images/cards/icons8-star-64.png" alt="star">
                             <p>3.5/5</p>
@@ -185,9 +235,9 @@
                         <p>294 skills</p>
                     </div>
                 </div>
-                <div class="bg-green-background rounded-lg p-5 pb-8 flex flex-col gap-3 w-full">
+                <div class="hidden lg:block bg-green-background rounded-lg p-3 lg:p-5 pb-8 flex flex-col gap-3 w-full cursor-pointer hover:bg-gray-100">
                     <p class="text-2xl">Development & IT</p>
-                    <div class="w-[70%] flex justify-between text-green-lightest">
+                    <div class="w-w70 flex justify-between text-green-lightest">
                         <div class="flex items-center gap-1">
                             <img class="h-8" src="images/cards/icons8-star-64.png" alt="star">
                             <p>3.5/5</p>
@@ -195,9 +245,9 @@
                         <p>294 skills</p>
                     </div>
                 </div>
-                <div class="bg-green-background rounded-lg p-5 pb-8 flex flex-col gap-3 w-full">
+                <div class="hidden lg:block bg-green-background rounded-lg p-3 lg:p-5 pb-8 flex flex-col gap-3 w-full cursor-pointer hover:bg-gray-100">
                     <p class="text-2xl">Development & IT</p>
-                    <div class="w-[70%] flex justify-between text-green-lightest">
+                    <div class="w-w70 flex justify-between text-green-lightest">
                         <div class="flex items-center gap-1">
                             <img class="h-8" src="images/cards/icons8-star-64.png" alt="star">
                             <p>3.5/5</p>
@@ -205,9 +255,9 @@
                         <p>294 skills</p>
                     </div>
                 </div>
-                <div class="bg-green-background rounded-lg p-5 pb-8 flex flex-col gap-3 w-full">
+                <div class=" hidden lg:block bg-green-background rounded-lg p-3 lg:p-5 pb-8 flex flex-col gap-3 w-full cursor-pointer hover:bg-gray-100">
                     <p class="text-2xl">Development & IT</p>
-                    <div class="w-[70%] flex justify-between text-green-lightest">
+                    <div class="w-w70 flex justify-between text-green-lightest">
                         <div class="flex items-center gap-1">
                             <img class="h-8" src="images/cards/icons8-star-64.png" alt="star">
                             <p>3.5/5</p>
@@ -216,10 +266,11 @@
                     </div>
                 </div>
             </div>
+            <p class="text-green-primary underline lg:hidden">Show more (3)</p>
         </div>
 
-        <div class="flex flex-col lg:flex-row gap-20 items-center mb-[100px]">
-            <div class=" h-[350px] w-full rounded-lg bg-center  lg:w-[40%] bg-[url('images/body/enterprise-2023.webp')]">
+        <div class="flex flex-col lg:flex-row gap-5 md:gap-20 items-center mb-div_gap">
+            <div class=" h-[350px] w-full rounded-lg bg-center  lg:w-w40p bg-[url('images/body/enterprise-2023.webp')]">
                 <!-- <img class="h-[350px] rounded-lg" src="images/body/enterprise-2023.webp" alt="enterprise image"> -->
             </div>
 
@@ -249,47 +300,341 @@
                     </div>
                 </div>
                 <div class="flex gap-3">
-                    <button class="rounded-full bg-green-primary text-white font-bold py-2 px-6">Sign up for free</button>
-                    <button class="rounded-full bg-white text-green-primary font-bold py-2 px-6 border-2 border-green-primary">Learn how to hire</button>
+                    <button class="hidden md:flex rounded-full bg-green-primary text-white font-bold py-2 px-6 hover:bg-green-hover">Sign up for free</button>
+                    <button class="rounded-full w-full md:max-w-fit  bg-white text-green-primary font-bold py-2 px-6 border-2 border-green-primary">Learn how to hire</button>
                 </div>
             </div>
         </div>
 
-        <div class="mx-[-10px] flex flex-col lg:flex-row lg:rounded-lg overflow-hidden mb-[100px]">
+        <div class="mx-[-10px] flex flex-col-reverse lg:flex-row lg:rounded-lg overflow-hidden mb-div_gap">
             <div class=" lg:w-[150%] bg-green-sea p-5 flex flex-col gap-4">
                 <p class="text-white text-lg lg:text-2xl">Enterprise Suite</p>
                 <div class="">
                     <h1 class="text-3xl lg:text-6xl text-white">This is how</h1>
-                    <h1 class="text-3xl lg:text-6xl text-[#91E6B3]">good companies</h1>
-                    <h1 class="text-3xl lg:text-6xl text-[#91E6B3]">find good companies</h1>
+                    <h1 class="text-3xl lg:text-6xl text-green-sea_light">good companies</h1>
+                    <h1 class="text-3xl lg:text-6xl text-green-sea_light">find good companies</h1>
                 </div>
-                <p class="text-white w-[80%] text-sm lg:text-base">Access the top 1% of talent on Upwork, and a full suite of hybrid workforce management tools. This is how innovation works now.</p>
+                <p class="text-white w-w80p text-sm lg:text-base">Access the top 1% of talent on Upwork, and a full suite of hybrid workforce management tools. This is how innovation works now.</p>
                 <div class="flex flex-col gap-2 ">
                     <div class="flex gap-3 items-center">
-                        <img class="h-[25px]" src="images/body/icons/icons8-archive-50.png">
+                        <img class="h-h25" src="images/body/icons/icons8-archive-50.png">
                         <p class="text-white text-sm lg:text-base">Access expert talent to fill your skill gaps</p>
                     </div>
                     <div class="flex gap-3 items-center">
-                        <img class="h-[25px]" src="images/body/icons/icons8-archive-50.png">
+                        <img class="h-h25" src="images/body/icons/icons8-archive-50.png">
                         <p class="text-white text-sm lg:text-base">Control your workflow: hire, classify and pay your talent</p>
                     </div>
                     <div class="flex gap-3 items-center">
-                        <img class="h-[25px]" src="images/body/icons/icons8-archive-50.png">
+                        <img class="h-h25" src="images/body/icons/icons8-archive-50.png">
                         <p class="text-white text-sm lg:text-base">Partner with Upwork for end-to-end support</p>
                     </div>
                 </div>
                 <button class="rounded-full bg-white text-green-sea font-bold py-2 px-6 max-w-fit border-none">Learn More</button>
             </div>
-            <div class="w-full sm:h-[200px] bg-[url('images/body/enterprise-2023.webp')] bg-no-repeat md:bg-cover"></div>
+            <div class="w-full h-h200 bg-[url('images/body/enterprise-2023.webp')] bg-center lg:h-auto bg-cover bg-no-repeat"></div>
         </div>
 
-        <div class="bg-[url('images/body/find-talent-2x.jpg')] bg-no-repeat bg-cover h-full w-full p-8 rounded-lg overflow-hidden">
-            <p class="text-white text-2xl mb-[90px]">For Clients</p>
-            <h1 class="text-white text-7xl mb-10">Find talent <br> your way</h1>
-            <p class="text-white md:w-[40%] text-lg">Work with the largest network of independent professionals and get things done—from quick turnarounds to big transformations.</p>
+        <div class="bg-black m-[-10px] md:bg-white mf:m-0">
+            <div class="bg-[url('images/body/find-talent-2x.jpg')] bg-no-repeat bg-cover bg-center md:h-full w-full p-8 md:rounded-lg overflow-hidden mb-div_gap">
+                <p class="text-white text-2xl mb-m90">For Clients</p>
+                <h1 class="text-white text-7xl mb-10">Find talent <br> your way</h1>
+                <p class="text-white md:w-w40p text-lg mb-5">Work with the largest network of independent professionals and get things done—from quick turnarounds to big transformations.</p>
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="bg-green-primary rounded-lg pt-10 pl-3 pb-3 pr-2 md:p-4 text-white flex justify-between md:flex-col md:gap-4 cursor-pointer hover:bg-white hover:text-green-primary">
+                        <p class="text-2xl md:text-5xl w-w45p md:w-full">Post a job and hire a pro</p>
+                        <div class="flex items-end justify-end md:justify-start">
+                            <p class="text-sm md:text-lg">Talent Marketplace →</p>
+                        </div>
+                    </div>
+                    <div class="bg-green-primary rounded-lg pt-10 pl-3 pb-3 pr-2 md:p-4 text-white flex justify-between md:flex-col md:gap-2 cursor-pointer hover:bg-white hover:text-green-primary">
+                        <p class="text-2xl md:text-5xl w-w45p md:w-full">Post a job and hire a pro</p>
+                        <div class="flex items-end justify-end md:justify-start">
+                            <p class="text-sm md:text-lg">Talent Marketplace →</p>
+                        </div>
+                    </div>
+                    <div class="bg-green-primary rounded-lg pt-10 pl-3 pb-3 pr-2 md:p-4 text-white flex justify-between md:flex-col md:gap-2 cursor-pointer hover:bg-white hover:text-green-primary">
+                        <p class="text-2xl md:text-5xl w-w45p md:w-full">Post a job and hire a pro</p>
+                        <div class="flex items-end justify-end md:justify-start">
+                            <p class="text-sm md:text-lg">Talent Marketplace →</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="flex flex-col md:flex-row md:gap-8 relative mb-m40 md:mb-div_gap mx-[-10px]">
+            <div class="bg-green-lightbackground p-5 md:p-10 md:rounded-lg md:w-w90p">
+                <div class="w-full md:w-w90p lg:w-w70">
+                    <h1 class="text-3xl md:text-5xl lg:text-6xl mb-3 md:mb-[60px]">Why businesses turn to upwork</h1>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex gap-2 md:gap-5">
+                            <img class="h-h25 md:h-h30 mt-1" src="images/body/icons/usd-circle.png" alt="dollar">
+                            <div class="flex flex-col md:gap-2">
+                                <p class="text-xl md:text-4xl">Proof of Quality</p>
+                                <p class="text-sm md:text-base text-green-lightest">Check any pro&apos;s work samples, client reviews, and identity verification.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 md:gap-5">
+                            <img class="h-h25 md:h-h30 mt-1" src="images/body/icons/usd-circle.png" alt="dollar">
+                            <div class="flex flex-col md:gap-2">
+                                <p class="text-xl md:text-4xl">Proof of Quality</p>
+                                <p class="text-sm md:text-base text-green-lightest">Check any pro&apos;s work samples, client reviews, and identity verification.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 md:gap-5">
+                            <img class="h-h25 md:h-h30 mt-1" src="images/body/icons/usd-circle.png" alt="dollar">
+                            <div class="flex flex-col md:gap-2">
+                                <p class="text-xl md:text-4xl">Proof of Quality</p>
+                                <p class="text-sm md:text-base text-green-lightest">Check any pro&apos;s work samples, client reviews, and identity verification.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="absolute"> -->
+                <img class="hidden md:block md:h-[380px] lg:h-h500 md:end-[150px] lg:end-[250px] md:top-[150px] lg:top-[70px] absolute" src="images/body/person-with-headset.webp">
+            <!-- </div> -->
+            <div class="flex bg-green-primary p-4 md:pt-p50p lg:pt-p25p md:pb-4 md:pl-8 md:rounded-lg">
+                <div class="md:w-full">
+                    <p class="text-white text-2xl mg:text-4xl mb-3">We're the world&apos;s work marketplace</p>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex gap-2 md:gap-4 md:ml-8">
+                            <img class="h-5 md:h-9" src="images/cards/icons8-star-64.png" alt="star">
+                            <div class="flex flex-col">
+                                <p class="text-white text-2xl md:text-4xl">4.9/5</p>
+                                <p class="text-white text-sm md:text-base">Clients rate professionals on Upwork</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 md:gap-4 md:ml-8">
+                            <img class="h-5 md:h-9" src="images/cards/icons8-star-64.png" alt="star">
+                            <div class="flex flex-col">
+                                <p class="text-white text-2xl md:text-4xl">4.9/5</p>
+                                <p class="text-white text-sm md:text-base">Clients rate professionals on Upwork</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <img class="h-h200" src="images/body/person-with-headset.webp" alt="person with headset">
+                </div>
+            </div>
+        </div>
+
+        <div class="block flex flex-col gap-5 md:hidden mx-4 mb-m50">
+            <h1 class="text-4xl">Sign upto hire talent for any job</h1>
+            <button class="rounded-full bg-green-primary text-white font-bold py-2 px-6 max-w-fit border-none">Find talent</button>
+        </div>
+
+        <div class="flex flex-col mx-[-10px] md:flex-row md:rounded-lg md:overflow-hidden mb-div_gap">
+            <div class="bg-[url('images/body/find-great-work@2x.webp')] bg-cover h-h400  md:h-h800 md:bg-right lg:h-[600px] w-full md:w-w50p"></div>
+            <div class="bg-blue w-full md:w-w50p text-white p-6 flex flex-col gap-8 md:justify-between">
+                <div class= "md:w-w70">
+                    <p class="text-base md:text-2xl mb-m10 md:mb-m50">For talent</p>
+                    <h1 class="text-4xl md:text-7xl mb-m10 md:mb-[15px]">Find great work</h1>
+                    <p>Meet clients you&apos;re excited to work with and take your career or business to new heights.</p>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <div class="flex border-t-[2px] pt-4 gap-3" >
+                        <p class="w30">Find opportunities for every stage of your freelance career</p>
+                        <p class="w30">Control when, where, and how you work</p>
+                        <p class="w30">Explore different ways to earn</p>
+                    </div>
+
+                    <button class="rounded-full bg-white text-blue font-bold py-2 px-6 max-w-fit border-none hover:bg-gray-100">Find opportunities</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex flex-col gap-4 mb-div_gap">
+            <h1 class="text-5xl md:text-7xl md:w-w50p">Trusted by leading brands and startups</h1>
+            <div class="flex gap-2 md:gap-7">
+                <div class="w-w50p bg-green-sea flex flex-col gap-g50 p-5 rounded-lg">
+                    <div class="flex flex-col gap-3">
+                        <img class="h-h30 md:h-h60 max-w-fit " src="images/brands/2560px-NASDAQ_Logo.svg.png" alt="Nasdaq logo">
+                        <h1 class="text-white text-base md:text-2xl font-bold">“Upwork enables us to differentiate ourselves from our competitors and produce content at a higher caliber.”</h1>
+                        <p class="text-gray-text text-sm md:text-xl">Josh Machiz, Chief Digital Officer</p>
+                    </div>
+
+                    <div class="flex flex-col gap-3">
+                        <p class="text-gray-text text-xs md:text-sm">Results</p>
+                        <div class="flex flex-col md:flex-row border-t-[2px] pt-2 gap-6">
+                            <div class="flex flex-col gap-2 md:w-w40p">
+                                <p class="text-white text-lg md:text-2xl">Emmy Winning</p>
+                                <p class="text-base md:text-xl text-gray-text ">Facebook Watch program</p>
+                            </div>
+                            <div class="flex flex-col gap-2 md:w-w60p">
+                                <p class="text-white text-lg md:text-2xl">Millions</p>
+                                <p class="text-base md:text-xl text-gray-text ">of impressions generated per client per IPO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-w50p bg-orange flex flex-col gap-g50 p-5 rounded-lg">
+                    <div class="flex flex-col gap-3">
+                        <img class="h-h30 md:h-h60 max-w-fit " src="images/brands/2560px-NASDAQ_Logo.svg.png" alt="Nasdaq logo">
+                        <h1 class="text-white text-base md:text-2xl font-bold">“Upwork enables us to differentiate ourselves from our competitors and produce content at a higher caliber.”</h1>
+                        <p class="text-gray-text text-sm md:text-xl">Josh Machiz, Chief Digital Officer</p>
+                    </div>
+
+                    <div class="flex flex-col gap-3">
+                        <p class="text-gray-text text-xs md:text-sm">Results</p>
+                        <div class="flex flex-col md:flex-row border-t-[2px] pt-2 gap-6">
+                            <div class="flex flex-col gap-2 md:w-w40p">
+                                <p class="text-white text-lg md:text-2xl">Emmy Winning</p>
+                                <p class="text-base md:text-xl text-gray-text ">Facebook Watch program</p>
+                            </div>
+                            <div class="flex flex-col gap-2 md:w-w60p">
+                                <p class="text-white text-lg md:text-2xl">Millions</p>
+                                <p class="text-base md:text-xl text-gray-text ">of impressions generated per client per IPO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="bg-green-background flex gap-4 flex-col md:flex-row p-9 rounded-lg mb-div_gap">
+            <div class="md:w-w80p flex flex-col gap-5">
+                <h1 class="text-3xl md:text-5xl">We support Ukraine</h1>
+                <p class="text-green-lightest text-sm md:text-xl">We are taking action to help our freelancers, our clients, and the people of Ukraine—and so can you.</p>
+            </div>
+            <div class="flex justify-center">
+                <img class="h-h70 md:h100" src="images/body/ukraine-help.svg" alt="help">
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-g60 lg:justify-between md:flex-row mb-div_gap">
+            <div class="flex md:flex-col overflow-hidden text-3xl lg:text-5xl md:gap-4 text-green-textlight">
+                <p class="text-green-primary">Top Skills</p>
+                <p class="hover:text-green-primary cursor-pointer">Top Skills</p>
+                <p class="hover:text-green-primary cursor-pointer">Top Skills</p>
+                <p class="hover:text-green-primary cursor-pointer">Top Skills</p>
+            </div>
+            <div class="grid justify-center md:grid-cols-2 md:gap-x-gx30 lg:gap-x-gx330 gap-y-[15px] text-2xl text-green-lightest">
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+                <p class="hover:text-green-primary cursor-pointer">Generative AI Specialist</p>
+
+            </div>
+        </div>
+
+        
+        <div class="bg-green-darkbackground text-sm text-white mx-[-10px] p-6 lg:p-8 lg:p-[120px] lg:rounded-lg pb-6 lg:mb-m40">
+            <div class="flex flex-col  md:flex-row md:justify-between lg:pr-[100px]">
+                <div class="flex flex-col">
+                    <div class="flex justify-between items-center border-b-[1px] md:border-none">
+                        <p class="lg:mb-8 pb-2 pt-2">For clients</p>
+                        <img class="h-3 md:hidden" src="images/footer/icons8-arrow-down-50.png" alt="drop-down">
+                    </div>
+                    <div class="hidden md:flex md:flex-col md:gap-2 ">
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class="flex justify-between items-center border-b-[1px] md:border-none">
+                        <p class="lg:mb-8 pb-2 pt-2">For clients</p>
+                        <img class="h-3 md:hidden" src="images/footer/icons8-arrow-down-50.png" alt="drop-down">
+                    </div>
+                    <div class="hidden md:flex md:flex-col md:gap-2">
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class="flex justify-between items-center border-b-[1px] md:border-none">
+                        <p class="lg:mb-8 pb-2 pt-2">For clients</p>
+                        <img class="h-3 md:hidden" src="images/footer/icons8-arrow-down-50.png" alt="drop-down">
+                    </div>
+                    <div class="hidden md:flex md:flex-col md:gap-2">
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class="flex justify-between items-center border-b-[1px] md:border-none">
+                        <p class="lg:mb-8 pb-2 pt-2">For clients</p>
+                        <img class="h-3 md:hidden" src="images/footer/icons8-arrow-down-50.png" alt="drop-down">
+                    </div>
+                    <div class="hidden md:flex md:flex-col md:gap-2">
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                        <p class="hover:underline cursor-pointer">How to hire</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-6 lg:flex-row lg:justify-between pt-8 pb-5 border-b-[1px] mb-3">
+                <div class="flex gap-4 items-center">
+                    <p>Follow us</p>
+                    <div class="flex">
+                        <img class="h-h40 cursor-pointer" src="images/footer/icons8-facebook-50.png" alt="facebook logo">
+                        <img class="h-h40 cursor-pointer" src="images/footer/icons8-facebook-50.png" alt="facebook logo">
+                        <img class="h-h40 cursor-pointer" src="images/footer/icons8-facebook-50.png" alt="facebook logo">
+                        <img class="h-h40 cursor-pointer" src="images/footer/icons8-facebook-50.png" alt="facebook logo">
+                    </div>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <p>Mobile App</p>
+                    <div class="flex">
+                        <img class="h-h40 cursor-pointer" src="images/footer/icons8-facebook-50.png" alt="facebook logo">
+                        <img class="h-h40 cursor-pointer" src="images/footer/icons8-facebook-50.png" alt="facebook logo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-3 lg:gap-8">
+                <p>© 2015 - 2024 Upwork® Global Inc.</p>
+                <div class="flex flex-col gap-3 lg:flex-row lg:gap-4">
+                    <p class="hover:underline cursor-pointer">Terms of Service</p>
+                    <p class="hover:underline cursor-pointer">Terms of Service</p>
+                    <p class="hover:underline cursor-pointer">Terms of Service</p>
+                    <p class="hover:underline cursor-pointer">Terms of Service</p>
+                </div>
+            </div>
         </div>
 
     </div>
+    
 </body>
 </html>
